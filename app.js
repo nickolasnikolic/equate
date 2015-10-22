@@ -7,7 +7,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var routes = require('./routes/index');
 
-mongoose.connect(process.env.MONGOURI || 'mongodb://localhost:27017/blind');
+mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/blind');
 
 var app = express();
 
