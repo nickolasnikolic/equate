@@ -19,7 +19,7 @@ router.post('/', function(req,res){
     firstCreated: Date.now(),
     lastEdited: Date.now()
   }).save();
-  res.redirect('/');
+  res.send(200).redirect('/');
 });
 
 module.exports = router;
