@@ -23,10 +23,10 @@ router.get('/', function(req, res, next) {
 
 router.post('/equation', function(req, res, next){
   Equation({
-    name: req.body.name,
-    area: req.body.area,
-    equation: req.body.equation,
-    discoveredBy:req.body.discoveredBy,
+    name: req.body.name || '',
+    area: req.body.area || '',
+    equation: req.body.equation || '',
+    discoveredBy:req.body.discoveredBy || '',
     lastEdited: Date.now(),
     firstCreated: Date.now()
   }).save();

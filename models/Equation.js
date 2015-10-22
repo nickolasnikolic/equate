@@ -5,6 +5,7 @@ var EquationSchema = mongoose.Schema({
     area: String,
     equation: String,
     discoveredBy:String,
+    submittedBy:String,
     lastEdited: Date,
     firstCreated: Date
 });
