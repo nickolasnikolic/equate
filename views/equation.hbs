@@ -10,8 +10,6 @@
 </section>
 <section>
     <ul>
-    {{#each equations}}
-        <li><a href="/{{area}}">{{area}}</a> - <a href="/equation/{{_id}}">{{name}} - `{{equation}}` discovered by: {{discoveredBy}}</li>
-    {{/each}}
+        <li><a href="/{{equation.area}}">{{equation.area}}</a> - <a href="/equation/{{equation._id}}">{{equation.name}} - `{{equation.equation}}` discovered by: {{equation.discoveredBy}}</li>
     </ul>
 </section>
