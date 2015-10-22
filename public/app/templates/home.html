@@ -1,7 +1,7 @@
 
 
 <section class="col-md-8 col-sm-8 login" id="HomeContainer">
-  <button>Add an equation to the list!</button>
+  <button class="btn btn-lg" data-toggle="modal" data-target="#submitEq">Add an equation to the list!</button>
   <article ng-repeat="equation in equations">
     <p>{{equation.name}}</p>
     <p>{{equation.area}}</p>
@@ -18,7 +18,7 @@
   <a href="https://plus.google.com/104485228807444642016" target="_blank" class="zocial googleplus">take me</a>
 </aside>
 
-<div class="modal fade">
+<div id="submitEq" class="modal fade">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
