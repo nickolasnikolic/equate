@@ -4,9 +4,10 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-
+var mongoose = require('mongoose');
 var routes = require('./routes/index');
-var users = require('./routes/users');
+
+mongoose.connect(process.env.MONGOURI || 'mongodb://localhost:27017/blind');
 
 var app = express();
 

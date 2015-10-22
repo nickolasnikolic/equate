@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 var EquationSchema = mongoose.Schema({
     name: String,
-    area: String,
+    domain: String,
     equation: String,
     discoveredBy:String,
     submittedBy:String,

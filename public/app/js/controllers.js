@@ -8,5 +8,9 @@ blindApp.controller('HomeController', ['$scope', '$state', '$http', 'globals', f
         $scope.equations = response;
       });
 
+  $scope.submitEq = function( obj ){
+
+  };
+
 }])
 
