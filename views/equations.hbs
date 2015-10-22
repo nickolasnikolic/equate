@@ -1,0 +1,12 @@
+<form action="/equations" method="post">
+    <div>name: <input name="name" type="text" /></div>
+    <div>area: <input name="area" type="text" /></div>
+    <div>equation: <input name="equation" type="text"/></div>
+    <div>discovered by: <input name="discoveredBy" type="text"/></div>
+    <button>send</button>
+</form>
+<ul>
+{{#each equations}}
+    <li>{{area}} - {{name}} - {{equation}} discovered by: {{discoveredBy}}</li>
+{{/each}}
+</ul>
