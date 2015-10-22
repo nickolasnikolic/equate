@@ -6,6 +6,7 @@ var Equation = require('../models/Equation');
 /* GET home page. */
 router.get('/', function(req, res, next) {
   Equation.find({},function(err, equations){
+    console.log(equations);
     res.render('equations', { title: 'boo', equations: equations });
   });
 });
