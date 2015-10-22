@@ -5,7 +5,7 @@
   <article class="col-md-4 col-sm-6" ng-repeat="equation in equations">
     <h2>{{equation.name}}</h2>
     <p>{{equation.area}}</p>
-    <div>{{equation.equation}}</div>
+    <div> {{mathMl(equation.equation)}}</div>
     <p>{{equation.discoveredBy}}</p>
     <p>{{equation.firstCreated}}</p>
     <p>{{equation.submittedBy}}</p>
