@@ -5,7 +5,7 @@ blindApp.controller('HomeController', ['$scope', '$state', '$http', 'globals', f
 
   $http.get('/api/equations')
       .then(function(response){
-        $scope.equations = response;
+        $scope.equations = response.data;
       });
 
   $scope.submitEq = function( obj ){

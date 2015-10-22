@@ -6,7 +6,11 @@ body{
   background-attachment: fixed;
   background-position: left top;
 
-  font-family: 'questaregular', serif;
+  color: white;
+}
+
+#submitEq{
+  color: black;
 }
 
 h1,h2,h3,h4,h5,h6{
@@ -44,21 +48,6 @@ header div{
   height: 2em;
 }
 
-#logout{
-  float: right;
-  padding-right: 0.8em;
-  margin: 2em 1.5em;
-}
-
-#qrcode{
-  margin: 3em auto 1em auto;
-}
-
-table{
-  margin: 2em;
-  padding: 1em;
-  width: 95% !important;
-}
 
 aside{
   padding-top: 5px;
@@ -84,66 +73,10 @@ footer{
   margin: 2em;
 }
 
-#loginButton{
-  position: relative;
-  top: -2px;
-}
-
-.mainWorkWindow,.blog{
-  min-width: 32em;
-  padding: 1.5em;
-  margin: 0.25em;
-}
-
-.mainWorkWindow{
-  background-color: rgba(255,255,255,0.65);
-}
-
-.blog{
-  padding-top: 6em;
-  background-color: white;
-  box-shadow: 0px 0px 25px white;
-}
-
-.login{
-  color: white;
-  background-color: transparent;
-}
-
-.login a,.login a:hover,.login a:visited{
-  color: white;
-  text-decoration: underline;
-}
-
-.login input{
-  color: black;
-  margin-bottom: 0.6em;
-}
-
-.description{
-  font-family: 'minimobold', sans-serif;
-  font-size: 1.2em;
-}
 
 .ad{
   min-height: 10em;
   background-color: #192931;
-}
-
-#HomeContainer li{
-  padding-right: 6em;
-}
-
-.spaceUpTop{
-  margin-top: 1em;
-}
-
-p{
-  letter-spacing: initial;
-  text-align: justify;
-  text-justify: inter-word;
-  text-overflow: ellipsis;
-  word-break: keep-all;
 }
 
 a{
@@ -203,13 +136,6 @@ button:focus{
   box-shadow: 0px 0px 5px black;
 }
 
-.features ul{
-  list-style-type: square;
-}
-
-.row{
-  padding: 1em;
-}
 
 @media screen and (max-width: 921px){
   h1{
@@ -217,10 +143,6 @@ button:focus{
   }
   #logo img{
     top: -10px;
-  }
-
-  .mainWorkWindow, .blog{
-    min-width: inherit;
   }
   
   .login input, .login button{

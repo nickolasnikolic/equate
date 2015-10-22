@@ -1,9 +1,9 @@
 
-
+<section><button class="btn btn-lg" data-toggle="modal" data-target="#submitEq">Add an equation to the list!</button></section>
 <section class="col-md-8 col-sm-8 login" id="HomeContainer">
-  <button class="btn btn-lg" data-toggle="modal" data-target="#submitEq">Add an equation to the list!</button>
+
   <article ng-repeat="equation in equations">
-    <p>{{equation.name}}</p>
+    <h2>{{equation.name}}</h2>
     <p>{{equation.area}}</p>
     <div>{{equation.equation}}</div>
     <p>{{equation.discoveredBy}}</p>
@@ -23,7 +23,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">Enter an equation:</h4>
+        <h2 class="modal-title">Enter an equation:</h2>
       </div>
       <div class="modal-body">
         <form>
