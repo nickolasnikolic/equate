@@ -5,7 +5,7 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-var routes = require('./routes/index');
+var apiRoutes = require('./routes/index');
 
 mongoose.connect(process.env.MONGOLAB_URI || 'mongodb://localhost:27017/blind');
 
@@ -17,10 +17,9 @@ app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(require('less-middleware')(path.join(__dirname, 'public/')));
 app.use(express.static(path.join(__dirname, 'public/')));
 
-app.use('/api', routes);
+app.use('/api', apiRoutes);
 
 app.use('/', function(req, res, next){
   res.status(302);
