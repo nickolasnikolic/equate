@@ -11,7 +11,7 @@ var users = require('./routes/users');
 var mongodb = require('mongodb');
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb:/localhost:27017/test');
+mongoose.connect('mongodb://localhost:27017/test');
 
 var app = express();
 
