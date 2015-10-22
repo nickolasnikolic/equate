@@ -2,7 +2,7 @@
 <section><button class="btn btn-lg" data-toggle="modal" data-target="#submitEq">Add an equation to the list!</button></section>
 <section class="col-md-8 col-sm-8 login" id="HomeContainer">
 
-  <article ng-repeat="equation in equations">
+  <article class="col-md-4 col-sm-6" ng-repeat="equation in equations">
     <h2>{{equation.name}}</h2>
     <p>{{equation.area}}</p>
     <div>{{equation.equation}}</div>
@@ -12,7 +12,7 @@
   </article>
 </section>
 
-<aside class="col-md-4 col-sm-12 ads">
+<aside class="col-md-3 col-sm-12 ads">
   <a href="http://facebook.com/blindworm.me" target="_blank" class="zocial facebook">take me</a>
   <a href="http://twitter.com/blindwormme" target="_blank" class="zocial twitter">take me</a>
   <a href="https://plus.google.com/104485228807444642016" target="_blank" class="zocial googleplus">take me</a>

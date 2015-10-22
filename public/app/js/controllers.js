@@ -6,6 +6,7 @@ blindApp.controller('HomeController', ['$scope', '$state', '$http', 'globals', f
   $http.get('/api/equations')
       .then(function(response){
         $scope.equations = response.data;
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
       });
 
   $scope.submitEq = function( obj ){
