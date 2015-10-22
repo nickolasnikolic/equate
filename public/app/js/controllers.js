@@ -18,11 +18,4 @@ blindApp.controller('HomeController', ['$scope', '$state', '$http', '$sce', 'glo
         });
   };
 
-  $scope.mathMl = function(returnTrusted, index){
-      var blindlyTrusting = returnTrusted[index];
-      var asciiMathParser = new AsciiMathParser(document);
-      blindlyTrusting = asciiMathParser.parseAsciiMathInput(blindlyTrusting);
-      return $sce.trustAsHtml(blindlyTrusting);
-  };
-
 }])
