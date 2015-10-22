@@ -5,9 +5,9 @@
   <article class="col-md-4 col-sm-6" ng-repeat="equation in equations">
     <h2>{{equation.name}}</h2>
     <p>{{equation.area}}</p>
-    <div> {{mathMl(equation.equation)}}</div>
+    <div ng-bind-html="equation.equation | asciiMath | trust"></div>
     <p>{{equation.discoveredBy}}</p>
-    <p>{{equation.firstCreated}}</p>
+    <p>{{equation.firstCreated | momentTimeAgo}}</p>
     <p>{{equation.submittedBy}}</p>
   </article>
 </section>
