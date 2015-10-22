@@ -9,7 +9,7 @@ blindApp.controller('HomeController', ['$scope', '$state', '$http', 'globals', f
       });
 
   $scope.submitEq = function( obj ){
-
+    $http.post('/api/equation', obj);
   };
 
 }])
